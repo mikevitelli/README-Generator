@@ -18,6 +18,11 @@ function generateMarkdown(data) {
 
   ${data.install}
 
+  ## Usage
+
+  ${data.usage}
+
+
   ## Credits
 
   ${data.credits}

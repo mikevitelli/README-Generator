@@ -18,13 +18,13 @@ const questions = [
   //description / input
   {
     type: "input",
-    message: "What is it?",
+    message: "Give a brief description of the project.",
     name: "description",
   },
   //installation / input
   {
     type: "input",
-    message: "How do you install it?",
+    message: "How does the user install it?",
     name: "install",
   },
   //usage
@@ -36,7 +36,7 @@ const questions = [
   //credits / input
   {
     type: "input",
-    message: "Who made it?",
+    message: "What is your Github username?",
     name: "credits",
   },
   //license / choice
