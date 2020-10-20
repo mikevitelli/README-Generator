@@ -1,7 +1,7 @@
 //link inquirer
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
 //link FS
-var fs = require("fs");
+const fs = require("fs");
 
 const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
 
@@ -64,7 +64,7 @@ const questions = [
 function writeToFile(fileName, data) {
   var fileName = "auto-generated-README.md";
   //populates the read me file
-  fs.writeFile(fileName, data, function (err) {
+  fs.writeFile(fileName, data, (err) => {
     // if error, log the error
     if (err) {
       return console.log(err);
@@ -77,7 +77,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init(fileName) {
   //asks questions array, takes the responses and passes them to the other function generateMarkdown, which styles the readme
-  inquirer.prompt(questions).then(function (response) {
+  inquirer.prompt(questions).then((response) => {
     writeToFile(fileName, generateMarkdown(response));
   });
 }
