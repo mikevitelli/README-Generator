@@ -1,9 +1,9 @@
 //link inquirer
-const inquirer = require("./Develop/node_modules/inquirer");
+const inquirer = require("./utils/node_modules/inquirer");
 //link FS
 const fs = require("fs");
 
-const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // var fileName = "goodReadMe.md";
 
