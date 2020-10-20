@@ -12,7 +12,7 @@ const questions = [
   //project / input
   {
     type: "input",
-    message: "what is the title of your project?",
+    message: "What is the title of your project?",
     name: "title",
   },
   //description / input
@@ -42,7 +42,7 @@ const questions = [
   //license / choice
   {
     type: "checkbox",
-    message: "What liscense you rockin' with?",
+    message: "What license are you using?",
     name: "license",
     choices: ["MIT", "GPLv3", "The Unlicense"],
   },
