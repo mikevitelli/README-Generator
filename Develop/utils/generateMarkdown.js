@@ -3,6 +3,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+
   ## Description
 
   ${data.description}
@@ -28,6 +29,8 @@ function generateMarkdown(data) {
 
   ## License
   ${data.license}
+  
+  [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 `;
 }
 
