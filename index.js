@@ -46,6 +46,18 @@ const questions = [
     name: "license",
     choices: ["MIT", "GPLv3", "The Unlicense"],
   },
+  //tests
+  {
+    type: "input",
+    message: "insert tests question here",
+    name: "tests",
+  },
+  //questions
+  {
+    type: "input",
+    message: "insert 'questons' prompt here",
+    name: "questions",
+  },
 ];
 
 // function to write README file
