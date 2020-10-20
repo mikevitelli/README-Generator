@@ -1,5 +1,6 @@
 //link inquirer
 var inquirer = require("inquirer");
+//link FS
 var fs = require("fs");
 
 const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
@@ -43,7 +44,7 @@ const questions = [
     type: "checkbox",
     message: "What liscense you rockin' with?",
     name: "license",
-    choices: ["MIT", "other", "another"],
+    choices: ["MIT", "GPLv3", "The Unlicense"],
   },
 ];
 
@@ -52,15 +53,18 @@ function writeToFile(fileName, data) {
   var fileName = "auto-generated-README.md";
   //populates the read me file
   fs.writeFile(fileName, data, function (err) {
+    // if error, log the error
     if (err) {
       return console.log(err);
     }
-    console.log("Success!");
+    // if it works
+    console.log("Success! Your document is ready for use!");
   });
 }
 
 // function to initialize program
 function init(fileName) {
+  //asks questions array, takes the responses and passes them to the other function generateMarkdown, which styles the readme
   inquirer.prompt(questions).then(function (response) {
     writeToFile(fileName, generateMarkdown(response));
   });
