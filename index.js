@@ -2,7 +2,7 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
 
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
 
 // var fileName = "goodReadMe.md";
 
