@@ -22,7 +22,6 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-
   ## Credits
 
   ${data.credits}
