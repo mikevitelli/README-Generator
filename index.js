@@ -1,5 +1,5 @@
 //link inquirer
-const inquirer = require("inquirer");
+const inquirer = require("./Develop/node_modules/inquirer");
 //link FS
 const fs = require("fs");
 

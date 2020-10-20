@@ -1,0 +1,19 @@
+{
+  "name": "hw-repo.7",
+  "version": "1.0.0",
+  "description": "readme-generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikevitelli/README-Generator.git"
+  },
+  "author": "@mikevitelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikevitelli/README-Generator/issues"
+  },
+  "homepage": "https://github.com/mikevitelli/README-Generator#readme"
+}
