@@ -13,7 +13,7 @@ a command-line application that dynamically generates a professional README.md f
 
 ## Installation
 
-Clone my repo down from github, make sure you are using the most updated node.js and inquirer package.
+Clone my repo down from github, make sure you are using the most updated node.js and inquirer package. click on th .gif below and watch my tutorial video.
 
 [![usage video](assets/readme-generator-demo.gif)](https://drive.google.com/file/d/1i8j3DSPbuhZjc52yMLe2v90zA667sABe "click me!")
 
