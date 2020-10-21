@@ -4,6 +4,8 @@
 
 a command-line application that dynamically generates a professional README.md from a user's input.
 
+repo url: https://github.com/mikevitelli/README-Generator
+
 ## Table of Contents
 
 - [Installation](#installation)
