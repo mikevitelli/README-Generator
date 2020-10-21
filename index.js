@@ -5,8 +5,6 @@ const fs = require("fs");
 
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// var fileName = "goodReadMe.md";
-
 // array of questions for user
 const questions = [
   //project / input
@@ -62,7 +60,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  var fileName = "auto-generated-README.md";
+  let fileName = "auto-generated-README.md";
   //populates the read me file
   fs.writeFile(fileName, data, (err) => {
     // if error, log the error
