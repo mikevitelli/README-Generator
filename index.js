@@ -33,6 +33,18 @@ const questions = [
     message: "How do you use it?",
     name: "usage",
   },
+  //tests
+  {
+    type: "input",
+    message: "What are the test instructions?",
+    name: "tests",
+  },
+  //questions
+  {
+    type: "input",
+    message: "How should any users direct their questions?",
+    name: "questions",
+  },
   //credits / input
   {
     type: "input",
@@ -45,18 +57,6 @@ const questions = [
     message: "What license are you using?",
     name: "license",
     choices: ["MIT", "GPLv3", "The Unlicense"],
-  },
-  //tests
-  {
-    type: "input",
-    message: "insert tests question here",
-    name: "tests",
-  },
-  //questions
-  {
-    type: "input",
-    message: "insert 'questons' prompt here",
-    name: "questions",
   },
 ];
 
