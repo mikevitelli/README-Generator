@@ -15,9 +15,7 @@ a command-line application that dynamically generates a professional README.md f
 
 Clone my repo down from github, make sure you are using the most updated node.js and inquirer package.
 
-<div class='iframe_container'>
-  <iframe src="https://www.youtube.com/watch?v=uHKfrz65KSU&ab_channel=AwwAnimals" width="640" height="480"></iframe>
-</div>
+[![usage video](assets/readme-generator-video.gif)](https://drive.google.com/file/d/1HXnSoDVwRX2YGw4h5bed17qZgYBfRtcu "click me!")
 
 ## Usage
 
