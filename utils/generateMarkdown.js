@@ -18,8 +18,11 @@ function generateMarkdown({
 
   ## Table of Contents
 
-  - [Installation](#installation)
+  - [Description](#description)
+  - [Install](#install)
   - [Usage](#usage)
+  - [Tests](#tests)
+  - [Questions](#questions)
   - [Credits](#credits)
   - [License](#license)
 
