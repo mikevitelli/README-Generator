@@ -76,14 +76,6 @@ function writeToFile(fileName, data) {
   });
 }
 
-// // function to initialize program
-// function init(fileName) {
-//   //asks questions array, takes the responses and passes them to the other function generateMarkdown, which styles the readme
-//   inquirer.prompt(questions).then((response) => {
-//     writeToFile(fileName, generateMarkdown(response));
-//   });
-// }
-
 const writeFileAsync = util.promisify(writeToFile);
 
 async function init() {
