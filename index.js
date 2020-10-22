@@ -52,6 +52,12 @@ const questions = [
     type: "input",
     message: "What is your Github username?",
     name: "credits",
+    validate: function (answer) {
+      if (answer.length < 1) {
+        return console.log("You must enter the title of your project.");
+      }
+      return true;
+    },
   },
   //license / choice
   {
@@ -59,12 +65,24 @@ const questions = [
     message: "What license are you using?",
     name: "license",
     choices: ["MIT", "GPLv3", "The Unlicense"],
+    validate: function (answer) {
+      if (answer.length < 1) {
+        return console.log("You must enter the title of your project.");
+      }
+      return true;
+    },
   },
   {
     type: "checkbox",
-    message: "What license are you using?",
-    name: "license",
-    choices: ["red", "blue", "green", "orange", "yellow"],
+    message: "What color do you want your button?",
+    name: "color",
+    choices: ["red", "blue", "orange", "yellow"],
+    validate: function (answer) {
+      if (answer.length < 1) {
+        return console.log("You must enter the title of your project.");
+      }
+      return true;
+    },
   },
 ];
 
