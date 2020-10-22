@@ -54,7 +54,7 @@ const questions = [
     name: "credits",
     validate: function (answer) {
       if (answer.length < 1) {
-        return console.log("You must enter the title of your project.");
+        return console.log("You must enter your username.");
       }
       return true;
     },
@@ -67,7 +67,7 @@ const questions = [
     choices: ["MIT", "GPLv3", "The Unlicense"],
     validate: function (answer) {
       if (answer.length < 1) {
-        return console.log("You must enter the title of your project.");
+        return console.log("You must enter the license of your project.");
       }
       return true;
     },
@@ -79,7 +79,7 @@ const questions = [
     choices: ["red", "blue", "orange", "yellow"],
     validate: function (answer) {
       if (answer.length < 1) {
-        return console.log("You must enter the title of your project.");
+        return console.log("You must choose a button color.");
       }
       return true;
     },
@@ -104,20 +104,20 @@ const writeFileAsync = util.promisify(writeToFile);
 
 async function init() {
   try {
+    // catch responses
     const userResponses = await inquirer.prompt(questions);
-    // after questions are answered, return responses
-    console.log("Your responses (in case you somehow forgot)", userResponses);
 
     //make call with github api
     const userInfo = await api.getUser(userResponses);
 
     //pass data from inquirer and api to markdown file
-    const markdownFile = generateMarkdown(userResponses, userInfo);
+    const markdownFile = await generateMarkdown(userResponses, userInfo);
 
     //write file
     await writeFileAsync("AUTO-README.md", markdownFile);
   } catch (error) {
     console.log(error);
+    init();
   }
 }
 

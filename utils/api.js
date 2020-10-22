@@ -10,7 +10,7 @@ const api = {
         .get(`https://api.github.com/users/${userResponses.credits}`);
       return response.data;
     } catch (error) {
-      console.log(error);
+      console.log("oops you entered your username incorrectly");
     }
   },
 };
