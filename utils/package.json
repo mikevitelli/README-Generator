@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/mikevitelli/README-Generator#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "axios": "^0.20.0",
+    "inquirer": "^7.3.3",
+    "rxjs": "^6.6.3",
+    "util": "^0.12.3"
   },
   "devDependencies": {}
 }

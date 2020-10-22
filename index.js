@@ -2,9 +2,12 @@
 const inquirer = require("./utils/node_modules/inquirer");
 //link FS
 const fs = require("fs");
+const util = require("./utils/node_modules/util");
+
+const api = require("./utils/api.js");
 
 const generateMarkdown = require("./utils/generateMarkdown.js");
-const { async } = require("rxjs");
+// const { async } = require("rxjs");
 
 // array of questions for user
 const questions = [
@@ -73,12 +76,33 @@ function writeToFile(fileName, data) {
   });
 }
 
-// function to initialize program
-function init(fileName) {
-  //asks questions array, takes the responses and passes them to the other function generateMarkdown, which styles the readme
-  inquirer.prompt(questions).then((response) => {
-    writeToFile(fileName, generateMarkdown(response));
-  });
+// // function to initialize program
+// function init(fileName) {
+//   //asks questions array, takes the responses and passes them to the other function generateMarkdown, which styles the readme
+//   inquirer.prompt(questions).then((response) => {
+//     writeToFile(fileName, generateMarkdown(response));
+//   });
+// }
+
+const writeFileAsync = util.promisify(writeToFile);
+
+async function init() {
+  try {
+    const userResponses = await inquirer.prompt(questions);
+    // after questions are answered, return responses
+    console.log("your resposes", userResponses);
+
+    //make call with github api
+    const userInfo = await api.getUser(userResponses);
+
+    //pass data from inquirer and api to markdown file
+    const markdownFile = generateMarkdown(userResponses, userInfo);
+
+    //write file
+    await writeFileAsync("AUTO-README.md", markdownFile);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // function call to initialize program
