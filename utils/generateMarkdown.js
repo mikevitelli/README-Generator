@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   
   ## Credits
 
-  ${data.credits}
+  [@${data.credits}](https://github.com/${data.credits})
 
   ## License
 
