@@ -4,7 +4,7 @@
 
 a command-line application that dynamically generates a professional README.md from a user's input.
 
-~HINT~ this document was generated automatically with this application :)
+<h4>HINT</h4> this document was generated automatically with this application :)
 
 repo url: https://github.com/mikevitelli/README-Generator
 
