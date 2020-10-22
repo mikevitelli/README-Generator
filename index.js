@@ -82,7 +82,7 @@ async function init() {
   try {
     const userResponses = await inquirer.prompt(questions);
     // after questions are answered, return responses
-    console.log("Your resposes (in case you somehow forgot)", userResponses);
+    console.log("Your responses (in case you somehow forgot)", userResponses);
 
     //make call with github api
     const userInfo = await api.getUser(userResponses);
