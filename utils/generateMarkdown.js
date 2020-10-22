@@ -1,10 +1,20 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+function generateMarkdown({
+  title,
+  description,
+  install,
+  usage,
+  tests,
+  questions,
+  credits,
+  license,
+  color,
+}) {
+  return `# ${title}
 
   ## Description
 
-  ${data.description}
+  ${description}
 
   ## Table of Contents
 
@@ -15,29 +25,27 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ${data.install}
+  ${install}
 
   ## Usage
 
-  ${data.usage}
+  ${usage}
 
   ## Tests
 
-  ${data.tests}
+  ${tests}
 
   ## Questions
 
-  ${data.questions}
+  ${questions}
   
   ## Credits
 
-  [@${data.credits}](https://github.com/${data.credits})
+  [@${credits}](https://github.com/${credits})
 
   ## License
-
-  ${data.license}
   
-  [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+  [![License: ${license}](https://img.shields.io/badge/license-${license}-${color}.svg)](http://${license}.org/)
 `;
 }
 

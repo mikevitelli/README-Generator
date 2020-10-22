@@ -60,6 +60,12 @@ const questions = [
     name: "license",
     choices: ["MIT", "GPLv3", "The Unlicense"],
   },
+  {
+    type: "checkbox",
+    message: "What license are you using?",
+    name: "license",
+    choices: ["red", "blue", "green", "orange", "yellow"],
+  },
 ];
 
 // function to write README file
