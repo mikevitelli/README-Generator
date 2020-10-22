@@ -4,7 +4,7 @@
 
 a command-line application that dynamically generates a professional README.md from a user's input.
 
-~HINT~ this document was generated automatically with this application :)
+<strong>HINT:</strong> this document was generated automatically with this application :)
 
 repo url: https://github.com/mikevitelli/README-Generator
 
@@ -38,8 +38,6 @@ node index.js
 @mikevitelli
 
 ## License
-
-MIT
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
