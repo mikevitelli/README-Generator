@@ -21,17 +21,31 @@ Clone my repo down from github =>
 
 make sure you are using the most updated node.js and inquirer package =>
 
+navigate to 'utils' directory and run:
+
+````
+npm i
+````
+
+to install the required dependancies!
+
+
 click on the .gif below and watch my tutorial video.
 
 [![usage video](assets/readme-generator-demo.gif)](https://drive.google.com/file/d/1Qi7mwEnClGqeoBDkvjz7ykO4iaDIjmrr/view "click me!! I'm a video")
 
 ## Usage
 
+Navigate to root folder
+
 run:
 
 ```
 node index.js
 ```
+
+to initialize the program
+
 
 ## Credits
 
