@@ -1,9 +1,2 @@
-/Develop/package-lock.json
-
-/Develop/node_modules
 node_modules
-node_modules
-.DS_Store/
-./package-lock.json
 package-lock.json
-index copy.js

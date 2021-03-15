@@ -4,10 +4,9 @@ const axios = require("axios");
 const api = {
   async getUser(userResponses) {
     try {
-      let response = await axios
-
-        // For reference: https://api.github.com/users/jordanwhunter
-        .get(`https://api.github.com/users/${userResponses.credits}`);
+      let response = await axios.get(
+        `https://api.github.com/users/${userResponses.credits}`
+      );
       return response.data;
     } catch (error) {
       console.log("oops you entered your username incorrectly");
