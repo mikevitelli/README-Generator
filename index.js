@@ -1,8 +1,8 @@
 //link inquirer
-const inquirer = require("./utils/node_modules/inquirer");
+const inquirer = require("./node_modules/inquirer");
 //link FS
 const fs = require("fs");
-const util = require("./utils/node_modules/util");
+const util = require("./node_modules/util");
 
 const api = require("./utils/api.js");
 
