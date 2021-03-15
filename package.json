@@ -1,6 +1,6 @@
 {
   "name": "readme-generator-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "readme-generator",
   "main": "bin/index.js",
   "scripts": {
