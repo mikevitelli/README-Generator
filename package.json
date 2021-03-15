@@ -4,7 +4,7 @@
   "description": "readme-generator",
   "main": "bin/index.js",
   "scripts": {
-    "test": "node index"
+    "test": "node ./bin/index"
   },
   "repository": {
     "type": "git",
