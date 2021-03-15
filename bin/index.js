@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //link inquirer
 const inquirer = require("inquirer");
 //link FS
