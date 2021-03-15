@@ -4,7 +4,8 @@
 
 This Command Line Interface (CLI) application is designed to create professional quality README.md documents for projects hosted on Github. Utilizing the [Inquirer](https://www.npmjs.com/package/inquirer) NPM package, this application generates a markdown file from the user's interaction through terminal actioins alone.
 
-repository: https://github.com/mikevitelli/README-Generator
+[Repository](https://github.com/mikevitelli/README-Generator)
+[Deployed]()
 
 ## Table of Contents
 
