@@ -2,7 +2,7 @@
   "name": "readme-generator-cli",
   "version": "1.0.0",
   "description": "readme-generator",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "node index"
   },
@@ -12,6 +12,9 @@
   },
   "author": "@mikevitelli",
   "license": "ISC",
+  "bin": {
+    "readme-generator-cli": "./bin/index.js"
+  },
   "bugs": {
     "url": "https://github.com/mikevitelli/README-Generator/issues"
   },

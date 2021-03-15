@@ -1,12 +1,12 @@
 //link inquirer
-const inquirer = require("./node_modules/inquirer");
+const inquirer = require("inquirer");
 //link FS
 const fs = require("fs");
-const util = require("./node_modules/util");
+const util = require("util");
 
-const api = require("./utils/api.js");
+const api = require("../utils/api.js");
 
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("../utils/generateMarkdown.js");
 // const { async } = require("rxjs");
 
 // array of questions for user
