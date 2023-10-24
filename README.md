@@ -26,7 +26,7 @@ This npm package utilizes a Command Line Interface (CLI) application designed to
 - Installation is done using the `npm install command`:
 
 ```
-$ npm install readme-generrator-cli
+$ npm install readme-generator-cli
 ```
 
 ## Usage
